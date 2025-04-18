@@ -6,4 +6,6 @@ vim.g.sonokai_transparent_background = 2
 
 -- set colorscheme
 vim.cmd("set termguicolors")
-vim.cmd("colorscheme sonokai")
+
+-- vim.cmd("colorscheme sonokai")
+vim.cmd("colorscheme tokyonight")

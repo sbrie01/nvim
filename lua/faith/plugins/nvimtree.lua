@@ -2,7 +2,24 @@ local keymap = vim.keymap
 
 require("nvim-tree").setup({
     auto_reload_on_write = true,
-    disable_netrw = true
+    disable_netrw = true,
+    respect_buf_cwd = true,
+    hijack_directories = {
+        enable = true,
+        auto_open = true
+    },
+    update_focused_file = {
+        enable = true,
+        update_root = {
+            enable = false
+        }
+    },
+    actions = {
+        change_dir = {
+            enable = true
+        }
+    }
+    
 })
 
 -- disable explore tree
